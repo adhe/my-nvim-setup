@@ -3,12 +3,22 @@ return {
 	{ "nvim-lua/plenary.nvim", event = "VeryLazy" },
 
 	-- color scheme
+	-- {
+	-- 	"folke/tokyonight.nvim",
+	-- 	lazy = false, -- make sure we load this during startup if it is your main colorscheme
+	-- 	priority = 1000, -- make sure to load this before all the other start plugins
+	-- 	config = function()
+	-- 		require("config.tokyonight")
+	-- 		require("config.colorscheme")
+	-- 	end,
+	-- },
+
 	{
-		"folke/tokyonight.nvim",
-		lazy = false, -- make sure we load this during startup if it is your main colorscheme
-		priority = 1000, -- make sure to load this before all the other start plugins
+		"navarasu/onedark.nvim",
+		lazy = false,
+		priority = 1000,
 		config = function()
-			require("config.tokyonight")
+			require("config.onedark")
 			require("config.colorscheme")
 		end,
 	},
