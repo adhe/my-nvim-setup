@@ -243,19 +243,19 @@ return {
 	-- untuk line info dibawah
 	{
 		"nvim-lualine/lualine.nvim",
-		dependencies = { "kyazdani42/nvim-web-devicons", opt = true },
+		dependencies = { "nvim-tree/nvim-web-devicons", opt = true },
 		event = "BufWinEnter",
 		opts = function()
 			require("config.lualine")
 		end,
 	},
 
-	-- for tree explorer
+	-- Tree Explorer
 	{
-		"kyazdani42/nvim-tree.lua",
+		"nvim-tree/nvim-tree.lua",
 		event = "BufWinEnter",
 		cmd = "NvimTreeToggle",
-		dependencies = "kyazdani42/nvim-web-devicons",
+		dependencies = "nvim-tree/nvim-web-devicons",
 		init = function()
 			require("config.nvim-tree")
 		end,
@@ -264,7 +264,7 @@ return {
 	-- for file tab
 	{
 		"akinsho/bufferline.nvim",
-		dependencies = { "kyazdani42/nvim-web-devicons", "famiu/bufdelete.nvim" },
+		dependencies = { "nvim-tree/nvim-web-devicons", "famiu/bufdelete.nvim" },
 		event = "VeryLazy",
 	},
 
