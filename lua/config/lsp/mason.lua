@@ -12,6 +12,7 @@ local servers = {
 	"intelephense",
 	"marksman",
 	"tailwindcss",
+	"svelte",
 }
 
 local settings = {
